@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping With JS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="navbar bg-base-100 shadow-2xl lg:px-12 ">
+        <div class="flex-1">
+          <div>
+         <h1 class="font-bold font-weight:700; text-3xl">Interactive</h1>
+         Geometry Genius
+        </div>
+        </div>
+        <div class="flex-none gap-2">
+          <div class="form-control">
+            
+          </div>
+          
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-rounded-md - avatar">
+              <div class="w-20 rounded-md">
+                <button class="btn btn-primary">Blog</button>
+              </div>
+            </label>
+            <ul
+              tabindex="0"
+              class="mt-5 p-5 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-100"
+            >
+              <li>
+                <a class="justify-between">
+                  What is DOM and what is the purpose of DOM?
+                  <span class="badge">The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</span>
+                </a>
+              </li>
+              <li><a>How will you select HTML elements using DOM? Name the DOM methods.</a></li>
+              <span class="badge">There are 5 ways in which you can select elements in a DOM using selectors.
+                getElementsByTagName()
+                getElementsByClassName()
+                getElementById()
+                querySelector()
+                querySelectorAll()
+                </span>
+              <li>
+                <a>
+                  What is event bubble?
+             <span class="badge">Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.</span>
+              </a>
+            </li>
+            <li>
+              <a class="justify-between">
+                What is a callback function and why will you use it?
+                <span class="badge">A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action. The above example is a synchronous callback, as it is executed immediately.</span>
+              </a>
+            </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+       
+        <div
+          class="products-cetails w-[70%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+           
+            
+            <figure>
+              <img class="w-full h-40" src="/images/triangle-1.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title justify-center" id="first-name">Triangle</h2>
+              <div class="flex justify-center">
+                Area (A) = b x h
+              </div>
+              <div class="flex justify-center">
+              b = 10 cm
+             h = 12 cm 
+             </div>
+             <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="first-card">
+                  Calculation
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="/images/rectangle-2.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Rectangle</h2>
+              <div class="flex justify-center">
+                Area (A) =  b x h
+              </div>
+              <div class="flex justify-center">
+              b = 10 cm
+             h = 12 cm 
+            </div>
+          <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="second-card">
+                  Calculation
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="/images/parallelogram-3.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="third-title">Parallelogram</h2>
+              <div class="flex justify-center">
+                Area (A) =  b x h
+              </div>
+              <div class="flex justify-center">
+              b = 10 cm
+             h = 12 cm 
+            </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="third-card">
+                  Calculation
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="/images/rhombus-4.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Rhombus</h2>
+              <div class="flex justify-center">
+                Area (A) =  b x h
+              </div>
+              <div class="flex justify-center">
+              b = 10 cm
+             h = 12 cm 
+            </div>
+             
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary"> Calculation</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="/images/pentagon-5.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="last-title">Pentagon</h2>
+              <div class="flex justify-center">
+                Area (A) =  b x h
+              </div>
+              <div class="flex justify-center">
+                    b = 10 cm
+                  h = 12 cm 
+                
+              </div>
+            <div class="card-actions justify-center">
+              <button class="btn btn-primary"> Calculation</button>
+            </div>
+
+
+            
+             
+              
+            </div>
+          </div>
+        </div>
+        <div class="cart-details w-full md:w-[30%] lg:w[30%] mx-auto">
+          <h1 class="text-3xl text-center font-bold underline mt-5">
+            Area Calculation
+          </h1>
+          
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
